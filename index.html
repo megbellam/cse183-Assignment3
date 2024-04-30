@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meghana Assignment3</title>
+    <style>
+        .cell { 
+            border: none; 
+            width: 40px; 
+            height: 40px; 
+        }   
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+</head>
+<body id="myapp">
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                Tic Tac Toe
+            </h1>
+        </div>
+    </section>
+    <section class="section">
+        <div class="gameinput">
+            <div class="row1">
+                <button class="cell-1-1 button" id="cell-1-1" v-on:click="play(1,1)">&nbsp;</button>
+                <button class="cell-1-2 button" id="cell-1-2" v-on:click="play(1,2)">&nbsp;</button>
+                <button class="cell-1-3 button" id="cell-1-3" v-on:click="play(1,3)">&nbsp;</button>
+            </div>
+            <div class="row2">
+                <button class="cell-2-1 button" id="cell-2-1" v-on:click="play(2,1)">&nbsp;</button>
+                <button class="cell-2-2 button" id="cell-2-2" v-on:click="play(2,2)">&nbsp;</button>
+                <button class="cell-2-3 button" id="cell-2-3" v-on:click="play(2,3)">&nbsp;</button>
+            </div>
+            <div class="row3">
+                <button class="cell-3-1 button" id="cell-3-1" v-on:click="play(3,1)">&nbsp;</button>
+                <button class="cell-3-2 button" id="cell-3-2" v-on:click="play(3,2)">&nbsp;</button>
+                <button class="cell-3-3 button" id="cell-3-3" v-on:click="play(3,3)">&nbsp;</button>
+            </div>
+        </div>
+        <div>
+            <div id="result1">&nbsp;</div>
+        </div>
+        <div class="field">
+            <div class="control">
+                <p> &nbsp;
+                <p>
+                <button class="button reset" v-on:click="reset()">RESET</button>
+            </div>
+          </div>
+    </section>
+    <!-- Load vue -->
+    <script src="vue.js"></script>
+    <script src="tictactoe.js"></script>
+</body>
+</html>
